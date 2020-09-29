@@ -18,6 +18,7 @@ setup(
     description="Testing CI Demo",
     extras_require={
         'testing': ['pytest'],
+        'docs': ['numpydoc', 'sphinx']
     },
     install_requires=['numpy'],
     license="BSD-3-Clause",
