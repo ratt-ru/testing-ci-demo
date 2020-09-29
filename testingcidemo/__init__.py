@@ -14,7 +14,7 @@ def f(i):
     int
         param.
     """
-    
+
     if not isinstance(i, int):
         raise TypeError("i must be an int")
 
@@ -26,7 +26,7 @@ def f(i):
 
     return i
 
-  
+
 def multi(x, y):
     """Multiplication function."""
     return x * y
