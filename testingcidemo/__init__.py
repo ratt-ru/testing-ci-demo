@@ -15,4 +15,4 @@ def f(i):
 
 
 def multi(x, y):
-    return x*y
+    return x * y
