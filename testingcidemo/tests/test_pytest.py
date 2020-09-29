@@ -16,7 +16,7 @@ def test_f_4(i):
 
 @pytest.mark.xfail
 @pytest.mark.parametrize("i", [-1, 11])
-def test_f_4(i):
+def test_f_out_of_bounds(i):
     assert f(i) == i
 
 
