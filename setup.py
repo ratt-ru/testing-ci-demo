@@ -17,7 +17,7 @@ setup(
     ],
     description="Testing CI Demo",
     extras_require={
-        'testing': ['pytest'],
+        'testing': ['pytest', 'pytest-flake8'],
     },
     install_requires=['numpy'],
     license="BSD-3-Clause",
