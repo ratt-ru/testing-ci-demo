@@ -16,3 +16,10 @@ def f(i):
         return "Apples"
 
     return i
+
+
+
+
+
+def multi(x, y):
+    return x*y
