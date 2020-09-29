@@ -2,6 +2,19 @@ __version__ = "0.0.1"
 
 
 def f(i):
+    """Example function with types documented in the docstring.
+
+    Parameters
+    ----------
+    i : int
+        The first parameter.
+
+    Returns
+    -------
+    int
+        param.
+    """
+    
     if not isinstance(i, int):
         raise TypeError("i must be an int")
 
@@ -13,6 +26,7 @@ def f(i):
 
     return i
 
-
+  
 def multi(x, y):
+    """Multiplication function."""
     return x * y
