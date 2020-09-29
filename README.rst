@@ -1,6 +1,5 @@
-Testing and Continuous Integration Demo
-=======================================
-
+Software DevOps Demo
+====================
 
 ===============
 testing-ci-demo
@@ -16,8 +15,8 @@ Main website: https://testing-ci-demo.readthedocs.io
 Introduction
 ==============
 
-Testing and Continuous Integration Demo
-Hosting and Continuous Documentation Demo
+- Testing and Continuous Integration Demo
+- Hosting and Continuous Documentation Demo
 
 ==============
 Installation
