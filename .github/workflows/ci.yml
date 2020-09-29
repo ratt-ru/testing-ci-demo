@@ -33,7 +33,7 @@ jobs:
 
       # Run the test cases
       - name: Testing Step
-        run: py.test -s -vvv testingcidemo/
+        run: py.test -s -vvv --flake8 testingcidemo/
 
   deploy:
     needs: [test]
