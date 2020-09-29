@@ -1,10 +1,6 @@
 __version__ = "0.0.1"
 
 
-
-
-
-
 def f(i):
     if not isinstance(i, int):
         raise TypeError("i must be an int")
@@ -18,8 +14,5 @@ def f(i):
     return i
 
 
-
-
-
 def multi(x, y):
-    return x*y
+    return x * y
