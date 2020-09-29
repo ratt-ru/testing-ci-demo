@@ -8,7 +8,7 @@ def test_f():
     assert f(1) == 1
     assert f(2) == 2
     assert f(3) == 3
-    assert f(4) == 4
+    assert f(4) == "Apples"
     assert f(5) == 5
     assert f(6) == 6
     assert f(7) == 7
