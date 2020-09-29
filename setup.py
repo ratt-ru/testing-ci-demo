@@ -17,7 +17,7 @@ setup(
     ],
     description="Testing CI Demo",
     extras_require={
-        'docs': ['numpydoc', 'sphinx']
+        'docs': ['numpydoc', 'sphinx'],
         'testing': ['pytest', 'pytest-flake8', 'black'],
     },
     install_requires=['numpy'],
