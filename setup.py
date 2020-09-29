@@ -16,6 +16,9 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     description="Testing CI Demo",
+    extras_require={
+        'testing': ['pytest']
+    },
     install_requires=['numpy'],
     license="BSD-3-Clause",
     #long_description="readme",
