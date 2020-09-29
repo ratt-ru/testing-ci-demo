@@ -33,7 +33,11 @@ jobs:
 
       # Run the test cases
       - name: Testing Step
-        run: py.test -s -vvv testingcidemo/
+        run: py.test -s -vvv --flake8 testingcidemo/
+
+      # Check black formatter
+      - name: Check Black
+        run: black --check testingcidemo/
 
   deploy:
     needs: [test]

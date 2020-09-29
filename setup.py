@@ -17,8 +17,9 @@ setup(
     ],
     description="Testing CI Demo",
     extras_require={
-        'testing': ['pytest'],
+    documentation
         'docs': ['numpydoc', 'sphinx']
+        'testing': ['pytest', 'pytest-flake8', 'black'],
     },
     install_requires=['numpy'],
     license="BSD-3-Clause",

@@ -1,5 +1,6 @@
 __version__ = "0.0.1"
 
+
 def f(i):
     """Example function with types documented in the docstring.
 
@@ -25,6 +26,7 @@ def f(i):
 
     return i
 
+  
 def multi(x, y):
     """Multiplication function."""
-    return x*y
+    return x * y
