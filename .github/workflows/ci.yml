@@ -6,11 +6,34 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.6", "3.7", "3.8"]
 
     steps:
+      # Use Custom Github Action to setup different version
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Checkout the source code
+      - name: Checkout source
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      # Upgrade pip and setuptools
+      - name: Upgrade pip and setuptools
+        run: python -m pip install -U pip setuptools
+
+      # Install the package with testing extras
+      - name: Install testing-ci-demo
+        run: python -m pip install .[testing]
+
+      # Run the test cases
       - name: Testing Step
-        run: >
-          echo "Testing!"
+        run: py.test -s -vvv testingcidemo/
 
   deploy:
     needs: [test]
