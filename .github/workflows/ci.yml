@@ -1,0 +1,22 @@
+name: RATT Github Actions Workflow
+
+# Specific github action events that you can lookup in their API
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Testing Step
+        run: >
+          echo "Testing!"
+
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Step
+        run: >
+          echo "Deploying PyPI"
