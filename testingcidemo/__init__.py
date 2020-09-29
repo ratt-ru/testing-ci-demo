@@ -12,4 +12,7 @@ def f(i):
     if i < 0 or i > 10:
         raise ValueError("i out of range")
 
+    if i == 4:
+        return "Apples"
+
     return i
